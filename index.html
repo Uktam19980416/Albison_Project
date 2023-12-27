@@ -13,6 +13,16 @@
     #menu-toggle:checked ~ body {
       left: 0;
     }
+    .shadow-for-img {
+      box-shadow: -15px 15px rgba(190,190,190,0.5);
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .shadow-for-img {
+        box-shadow: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1630,13 +1640,13 @@
     </div>
   </div>
 
-  <div>
-    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%] mt-10">
-      <h1 class="text-[32px] font-normal max-md:text-center">Немного о нас</h1>
+  <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%] mt-10">
+    <h1 class="text-[32px] font-normal max-md:text-center">Немного о нас</h1>
+    <div class="mt-[60px]">
       <div class="flex gap-16 max-md:flex-col max-md:justify-center max-md:items-center max-md:mt-5">
         <div class="w-1/2 max-md:order-2 max-md:w-full">
           <hr class="my-6 bg-[#FF7A1B] h-[3px] max-md:hidden">
-          <p class="text-[16px] font-light max-md:text-center max-md:px-4">
+          <p class="text-[16px] font-light max-md:text-center max-md:px-4 max-md:text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. At lacus integer nunc, ornare ipsum lorem nulla est. Augue eros adipiscing nec senectus duis nibh. In faucibus adipiscing tellus enim, consequat integer accumsan. Ultrices ipsum nulla consequat malesuada enim mollis est.
           </p>
           <div class="flex gap-3 mt-6 max-md:bg-[#F9F8F3] max-md:rounded-[5px] max-md:flex-col max-md:px-4">
@@ -1653,7 +1663,7 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 max-md:order-1 max-md:w-full">
+        <div class="w-1/2 max-md:order-1 max-md:w-full shadow-for-img">
           <img 
             src="./build/img/Rectangle 444.png" 
             alt=""
@@ -1662,7 +1672,120 @@
         </div>
       </div>
     </div>
+
+    <!-- News -->
+    <div class="py-10">
+      <h1 class="text-[32px] font-normal max-md:text-center">Статьи, новости и обзоры</h1>
+      <div class="grid grid-cols-3 gap-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-[400px]:grid-cols-1 mt-10">
+        <div class="flex flex-col gap-3">
+          <div class="w-full">
+            <img 
+              class="w-full h-full object-cover"
+              src="./build/img/news1.png" 
+              alt=""
+            >
+          </div>
+          <p class="text-xl font-semibold text-[#FF7A1B]">Как выбрать беседку для дачи</p>
+          <p class="text-xs font-normal text-[#bbb]">19 сентября 2021</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare felis faucibus turpis justo, ipsum sed sit. Nisl mauris adipiscing congue tortor bibendum condimentum sociis lorem. Nibh ut ornare nec est pharetra, tortor egestas quam non. Aenean felis sed mauris eu. Nisi pellentesque.
+          </p>
+          <a href="#" class="text-sm font-light text-[#FF7A1B] underline">Читать далее ></a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="w-full">
+            <img 
+              class="w-full h-full object-cover"
+              src="./build/img/news2.png" 
+              alt=""
+            >
+          </div>
+          <p class="text-xl font-semibold text-[#FF7A1B]">Как выбрать беседку для дачи</p>
+          <p class="text-xs font-normal text-[#bbb]">19 сентября 2021</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare felis faucibus turpis justo, ipsum sed sit. Nisl mauris adipiscing congue tortor bibendum condimentum sociis lorem. Nibh ut ornare nec est pharetra, tortor egestas quam non. Aenean felis sed mauris eu. Nisi pellentesque.
+          </p>
+          <a href="#" class="text-sm font-light text-[#FF7A1B] underline">Читать далее ></a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="w-full">
+            <img 
+              class="w-full h-full object-cover"
+              src="./build/img/news3.png" 
+              alt=""
+            >
+          </div>
+          <p class="text-xl font-semibold text-[#FF7A1B]">Как выбрать беседку для дачи</p>
+          <p class="text-xs font-normal text-[#bbb]">19 сентября 2021</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare felis faucibus turpis justo, ipsum sed sit. Nisl mauris adipiscing congue tortor bibendum condimentum sociis lorem. Nibh ut ornare nec est pharetra, tortor egestas quam non. Aenean felis sed mauris eu. Nisi pellentesque.
+          </p>
+          <a href="#" class="text-sm font-light text-[#FF7A1B] underline">Читать далее ></a>
+        </div>
+        <div class="flex flex-col gap-3 max-[400px]:hidden">
+          <div class="w-full">
+            <img 
+              class="w-full h-full object-cover"
+              src="./build/img/news2.png" 
+              alt=""
+            >
+          </div>
+          <p class="text-xl font-semibold text-[#FF7A1B]">Как выбрать беседку для дачи</p>
+          <p class="text-xs font-normal text-[#bbb]">19 сентября 2021</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare felis faucibus turpis justo, ipsum sed sit. Nisl mauris adipiscing congue tortor bibendum condimentum sociis lorem. Nibh ut ornare nec est pharetra, tortor egestas quam non. Aenean felis sed mauris eu. Nisi pellentesque.
+          </p>
+          <a href="#" class="text-sm font-light text-[#FF7A1B] underline">Читать далее ></a>
+        </div>
+        <div class="flex flex-col gap-3 max-md:hidden">
+          <div class="w-full">
+            <img 
+              class="w-full h-full object-cover"
+              src="./build/img/news3.png" 
+              alt=""
+            >
+          </div>
+          <p class="text-xl font-semibold text-[#FF7A1B]">Как выбрать беседку для дачи</p>
+          <p class="text-xs font-normal text-[#bbb]">19 сентября 2021</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare felis faucibus turpis justo, ipsum sed sit. Nisl mauris adipiscing congue tortor bibendum condimentum sociis lorem. Nibh ut ornare nec est pharetra, tortor egestas quam non. Aenean felis sed mauris eu. Nisi pellentesque.
+          </p>
+          <a href="#" class="text-sm font-light text-[#FF7A1B] underline">Читать далее ></a>
+        </div>
+        <div class="flex flex-col gap-3 max-md:hidden">
+          <div class="w-full">
+            <img 
+              class="w-full h-full object-cover"
+              src="./build/img/news1.png" 
+              alt=""
+            >
+          </div>
+          <p class="text-xl font-semibold text-[#FF7A1B]">Как выбрать беседку для дачи</p>
+          <p class="text-xs font-normal text-[#bbb]">19 сентября 2021</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare felis faucibus turpis justo, ipsum sed sit. Nisl mauris adipiscing congue tortor bibendum condimentum sociis lorem. Nibh ut ornare nec est pharetra, tortor egestas quam non. Aenean felis sed mauris eu. Nisi pellentesque.
+          </p>
+          <a href="#" class="text-sm font-light text-[#FF7A1B] underline">Читать далее ></a>
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-8">
+        <button class="btn bg-[#FF7A1B] text-white text-[22px] max-md:text-[16px] w-1/2 md:hidden">Больше статей</button>
+      </div>
+    </div>
   </div>
+
+  <div class="mt-5 bg-[#F9F8F3] py-10">
+    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%] mt-10">
+      
+    </div>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </body>
 <script src="./src/script.js"></script>
 </html>
