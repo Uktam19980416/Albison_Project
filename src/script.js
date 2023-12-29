@@ -20,3 +20,5 @@ function prev() {
 
 document.querySelector('.fa-chevron-left').addEventListener('click', prev);
 document.querySelector('.fa-chevron-right').addEventListener('click', next);
+
+// Path: category.html
