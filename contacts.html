@@ -251,8 +251,9 @@
 
     <section class="max-md:mt-5">
       <div class="flex gap-7 max-md:flex-col">
-        <div class="flex flex-col gap-4 w-1/2 max-md:w-full max-md:justify-center">
+        <div class="flex flex-col gap-4 w-1/2 max-md:w-full max-md:justify-center max-md:items-center">
           <h2 class="text-2xl font-normal">Главный офис</h2>
+          <hr class="w-full h-[2px] bg-[#E8E8E8] block md:hidden">
           <div class="flex items-start gap-4">
             <div>
               <i class="fa-solid fa-location-dot text-[#FF7A1B]"></i>
@@ -276,8 +277,9 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202845.2009510306!2d-122.20590425182338!3d37.40268918026299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20Kaliforniya%2C%20Amerika%20Qo%E2%80%98shma%20Shtatlari!5e0!3m2!1suz!2s!4v1704189805785!5m2!1suz!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        <div class="flex flex-col gap-4 max-md:w-full">
+        <div class="flex flex-col gap-4 w-1/2 max-md:w-full max-md:items-center">
           <h2 class="text-2xl font-normal">Наш склад</h2>
+          <hr class="w-full h-[2px] bg-[#E8E8E8] block md:hidden">
           <div class="flex items-start gap-4">
             <div>
               <i class="fa-solid fa-location-dot text-[#FF7A1B]"></i>
@@ -305,21 +307,22 @@
     </section>
 
     <section class="mt-24">
-      <div class="flex items-center justify-between">
-        <div class="w-1/2 flex flex-col gap-5">
-          <h2 class="text-2xl font-normal">Контактный центр</h2>
-          <div class="flex flex-col">
-            <p class="text-[16px] font-light leading-[172%]">Ответим на любые ваши вопросы, проконсультируем в выборе и комплектации оборудования и расходных материалов,  расскажем о способах оплаты и доставки, уточним наличие на складе.
+      <h2 class="text-2xl font-normal max-md:text-center max-2xl:text-center">Контактный центр</h2>
+      <hr class="w-full h-[2px] bg-[#E8E8E8] block md:hidden mt-4">
+      <div class="flex items-center justify-between max-2xl:flex-col">
+        <div class="w-1/2 flex flex-col gap-5 max-2xl:gap-10 max-2xl:w-full">
+          <div class="flex flex-col max-2xl:gap-2">
+            <p class="text-[16px] font-light leading-[172%] mt-5">Ответим на любые ваши вопросы, проконсультируем в выборе и комплектации оборудования и расходных материалов,  расскажем о способах оплаты и доставки, уточним наличие на складе.
             </p>
             <p class="text-[16px] font-normal leading-[190%]">График работы менеджеров: <span class="font-light">09:00 - 23:59</span></p>
             <p class="text-[16px] font-normal leading-[190%]">Приём заказов через сайт: <span class="font-light">Круглосуточно</span></p>
             <p class="text-[16px] font-normal leading-[190%]">Круглосуточно По поводу приобретения, <span class="font-light"обращайтесь к менеджеру магазина.</span></p>
           </div>
-          <div class="w-full flex gap-5">
-            <a href="#" class="w-1/3 py-2 bg-[#FFD634] text-center text-[16px] font-normal">Заказать обратный звонок</a>
-            <a href="#" class="w-1/3 py-2 bg-[#F9F8F3] text-center text-[16px] font-normal">Задать вопрос Online</a>
+          <div class="w-full flex gap-5 max-2xl:flex-col">
+            <a href="#" class="w-1/3 max-2xl:w-full py-2 bg-[#FFD634] text-center text-[16px] font-normal">Заказать обратный звонок</a>
+            <a href="#" class="w-1/3 max-2xl:w-full py-2 bg-[#F9F8F3] text-center text-[16px] font-normal">Задать вопрос Online</a>
           </div>
-          <div class="flex">
+          <div class="flex max-2xl:hidden">
             <p class="text-[16px] font-normal leading-[132%] mt-11">Или свяжитесь с нами самостоятельно </p>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="507" height="81" viewBox="0 0 507 81" fill="none">
@@ -328,24 +331,25 @@
             </div>
           </div>
         </div>
-        <div class="py-[70px] px-[60px] flex items-center justify-between shadow shadow-slate-600 gap-20">
-          <div class="flex flex-col gap-10">
+        <div class="py-[70px] px-[60px] max-sm:py-7 max-sm:px-[22px] flex items-center justify-between shadow shadow-slate-600 w-1/2 max-2xl:mt-5 max-2xl:w-full max-[460px]:flex-col">
+          <p class="text-[18px] font-normal leading-[132%] hidden max-[460px]:block opacity-70 mb-5">Или свяжитесь с нами самостоятельно </p>
+          <div class="flex flex-col gap-10 max-[460px]:gap-2">
             <div>
-              <p class="text-[28px] font-light">8 (800)<span class="font-semibold text-[#FF7A1B]"> 800-00-00</span></p>
+              <p class="text-[28px] max-2xl:text-2xl font-light">8 (800)<span class="font-semibold text-[#FF7A1B]"> 800-00-00</span></p>
               <p class="text-[16px] font-normal">Москва</p>
             </div>
             <div class="flex flex-col">
-              <p class="text-[28px] font-light">8 (495)<span class="font-semibold text-[#FF7A1B]"> 700-00-00</span></p>
+              <p class="text-[28px] max-2xl:text-2xl font-light">8 (495)<span class="font-semibold text-[#FF7A1B]"> 700-00-00</span></p>
               <p class="text-[16px] font-normal">Вся Россия</p>
             </div>
           </div>
-          <div class="flex flex-col gap-10">
+          <div class="flex flex-col gap-10 mt-2 max-[460px]:gap-2">
             <div>
-              <p class="text-[28px] font-light">8 (800)<span class="font-semibold text-[#FF7A1B]"> 800-00-00</span></p>
+              <p class="text-[28px] max-2xl:text-2xl font-light">8 (800)<span class="font-semibold text-[#FF7A1B]"> 800-00-00</span></p>
               <p class="text-[16px] font-normal">e-mail</p>
             </div>
             <div class="flex flex-col">
-              <p class="text-[28px] font-light">8 (495)<span class="font-semibold text-[#FF7A1B]"> 700-00-00</span></p>
+              <p class="text-[28px] max-2xl:text-2xl font-light">8 (495)<span class="font-semibold text-[#FF7A1B]"> 700-00-00</span></p>
               <p class="text-[16px] font-normal">WhatsApp</p>
             </div>
           </div>
