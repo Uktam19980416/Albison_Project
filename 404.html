@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albison</title>
+  <link rel="stylesheet" href="./build/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    #menu-toggle:checked ~ .toggled-bar {
+      left: 0;
+    }
+    #menu-toggle:checked ~ body {
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-[#2B150D] py-4 max-sm:hidden">
+    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
+      <div class="flex justify-between max-[1450px]:flex-col max-[1450px]:justify-between items-center">
+        <div class="flex gap-12">
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-location-dot text-[#FFD634]"></i>
+            <span class="text-white text-[13px] font-semibold">Ваш город:</span>
+            <select class="bg-transparent text-[13px] text-white font-semibold">
+              <option value="1">Константинополь</option>
+            </select>
+          </div>
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-location-dot text-[#FFD634]"></i>
+            <span class="text-white text-[13px] font-semibold">Наш офис:</span>
+            <select class="bg-transparent text-[13px] text-white font-semibold">
+              <option value="1">Москва, ул. Новокосимская д.7</option>
+            </select>
+          </div>
+        </div>
+        <nav>
+          <ul class="flex gap-[74px]">
+            <li class="list-none">
+              <a href="./articles.html" class="text-white text-[13px] font-normal hover:text-[#FF7A1B]">Статьи</a>
+            </li>
+            <li class="list-none">
+              <a href="3" class="text-white text-[13px] font-normal hover:text-[#FF7A1B]">Оплата</a>
+            </li>
+            <li class="list-none">
+              <a href="3" class="text-white text-[13px] font-normal hover:text-[#FF7A1B]">Гарантия</a>
+            </li>
+            <li class="list-none">
+              <a href="3" class="text-white text-[13px] font-normal hover:text-[#FF7A1B]">Дилерам</a>
+            </li>
+            <li class="list-none">
+              <a href="3" class="text-white text-[13px] font-normal hover:text-[#FF7A1B]">Вакансии</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-[#F9F8F3] py-4">
+    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%] max-sm:w-full">
+
+      <div class="flex justify-between items-center max-[1380px]:hidden">
+        <div class="flex flex-col gap-2">
+          <div class="w-full flex justify-center">
+            <img
+              src="./build/img/logo.png" 
+              alt="Logo"
+            >
+          </div>
+          <p class="text-black font-normal text-sm text-center">Логотип вашего магазина</p>
+        </div>
+        <div class="flex flex-col gap-[10px]">
+          <ul class="flex gap-10 max-2xl:gap-5 max-[960px]:gap-0">
+            <li class="list-none">
+              <i class="fa-solid fa-check text-[#FFD634]"></i>
+              <a href="#" class="text-[13px] font-normal text-[#2B150D]">Лучшие цены</a>
+            </li>
+            <li class="list-none">
+              <i class="fa-solid fa-check text-[#FFD634]"></i>
+              <a href="./delivery.html" class="text-[13px] font-normal text-[#2B150D]">Бесплатная доставка</a>
+            </li>
+            <li class="list-none">
+              <i class="fa-solid fa-check text-[#FFD634]"></i>
+              <a href="#" class="text-[13px] font-normal text-[#2B150D]">Гарантия от 3х лет</a>
+            </li>
+            <li class="list-none">
+              <i class="fa-solid fa-check text-[#FFD634]"></i>
+              <a href="#" class="text-[13px] font-normal text-[#2B150D]">Более 1 000 товаров</a>
+            </li>
+          </ul>
+          <div class="w-full flex items-center">
+            <input 
+              class="w-[80%] border-[1px] border-[#E8E8E8] rounded-[5px] py-2 px-4 focus:outline-none focus:border-[#FFD634]"
+              type="text" 
+              placeholder="Поиск по каталогу..."
+            >
+            <button class="w-[20%] bg-[#FFD634] text-black text-[16px] font-normal py-2 rounded-[5px] hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#ffd634] hover:border-[#ffd634]">Поиск</button>
+          </div>
+        </div>
+        <div class="flex gap-2">
+          <i class="fa-regular fa-clock text-[#FFD634]"></i>
+          <div class="">
+            <p class="text-[13px] font-normal">Ежедневно с 9:00 до 21:00</p>
+            <p class="text-[#2B150D] text-lg font-light">8 (800) <span class="font-semibold">800-00-00</span></p>
+            <p class="text-[#2B150D] text-lg font-light">8 (495) <span class="font-semibold">700-00-00</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex gap-2 justify-center">
+            <i class="fa-regular fa-envelope text-[#FFD634]"></i>
+            <a href="mailto:youremail@mailbox.ru" class="text-[13px] font-normal">youremail@mailbox.ru</a>
+          </div>
+          <div class="w-full">
+            <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-5 min-[1381px]:hidden max-sm:bg-[#2B150D]">
+        <div class="flex justify-between items-center max-sm:gap-5 max-sm:w-[95%]">
+          <div class="flex gap-6 items-center justify-center max-sm:w-[10%] max-sm:pl-7 max-sm:justify-start">
+            <label for="menu-toggle" class="cursor-pointer">
+              <i class="fa-solid fa-bars-staggered text-2xl max-sm:text-white"></i>
+            </label>
+            <div class="max-sm:hidden">
+              <div class="w-full flex justify-center">
+                <img
+                  src="./build/img/logo.png" 
+                  alt="Logo"
+                >
+              </div>
+              <p class="text-black font-normal text-sm text-center">Логотип вашего магазина</p>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center gap-5">
+            <div class="flex gap-2 max-sm:hidden">
+              <i class="fa-regular fa-clock text-[#FFD634]"></i>
+              <div class="">
+                <p class="text-[13px] font-normal">Ежедневно с 9:00 до 21:00</p>
+                <p class="text-[#2B150D] text-lg font-light">8 (800) <span class="font-semibold">800-00-00</span></p>
+                <p class="text-[#2B150D] text-lg font-light">8 (495) <span class="font-semibold">700-00-00</span></p>
+              </div>
+            </div>
+            <div class="flex flex-col max-sm:hidden">
+              <div class="flex gap-2 justify-center">
+                <i class="fa-regular fa-envelope text-[#FFD634]"></i>
+                <a href="mailto:youremail@mailbox.ru" class="text-[13px] font-normal">youremail@mailbox.ru</a>
+              </div>
+              <div class="w-full">
+                <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+              </div>
+            </div>
+          </div>
+          <div class="sm:hidden py-2 max-sm:w-[80%]">
+            <input 
+              class="w-[80%] border-[1px] border-[#E8E8E8] rounded-[5px] py-2 px-4 focus:outline-none focus:border-[#FFD634] max-sm:w-[100%]"
+              type="text" 
+              placeholder="Поиск по каталогу..."
+            >
+          </div>
+          <div class="sm:hidden max-sm:w-[5%] max-sm:flex max-sm:justify-end">
+            <i class="fa-solid fa-phone text-white text-xl"></i>
+          </div>
+        </div>
+
+        <div class="w-full flex items-center max-sm:hidden">
+          <input 
+            class="w-[80%] border-[1px] border-[#E8E8E8] rounded-[5px] py-2 px-4 focus:outline-none focus:border-[#FFD634]"
+            type="text" 
+            placeholder="Поиск по каталогу..."
+          >
+          <button class="w-[20%] bg-[#FFD634] text-black text-[16px] font-normal py-2 rounded-[5px] hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#ffd634] hover:border-[#ffd634]">Поиск</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
+    <nav class="max-[1381px]:hidden">
+      <ul class="flex justify-between items-center text-center">
+        <div class="flex gap-3 bg-[#FFD634] text-center items-center py-3 px-4 w-1/5">
+          <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>
+          <p class="text-[16px] font-normal">Каталог товаров</p>
+        </div>
+        <li class="list-none">
+          <a href="./aboutCompany.html" class="text-sm font-normal">О компании</a>
+        </li>
+        <li class="list-none">
+          <a href="#" class="text-sm font-normal">Отзывы</a>
+        </li>
+        <li class="list-none">
+          <a href="#" class="text-sm font-normal">Наши работы</a>
+        </li>
+        <li class="list-none">
+          <a href="./delivery.html" class="text-sm font-normal">Доставка</a>
+        </li>
+        <li class="list-none">
+          <a href="./contacts.html" class="text-sm font-normal">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <input type="checkbox" class="hidden" id="menu-toggle">
+  <nav class="fixed -left-full top-0 w-full h-dvh toggled-bar flex flex-col bg-white transition-all">
+    <div class="flex justify-between items-center bg-orange-400 py-4 px-4">
+      <h1 class="text-white text-lg uppercase">Top Menu</h1>
+      <label for="menu-toggle">
+        <i class="fa-solid fa-xmark text-2xl text-white cursor-pointer"></i>
+      </label>
+    </div>
+    <ul class="flex flex-col justify-between gap-5">
+      <li class="list-none px-4">
+        <a href="./aboutCompany.html" class="text-sm font-normal">О компании</a>
+      </li>
+      <li class="list-none px-4">
+        <a href="#" class="text-sm font-normal">Отзывы</a>
+      </li>
+      <li class="list-none px-4">
+        <a href="#" class="text-sm font-normal">Наши работы</a>
+      </li>
+      <li class="list-none px-4">
+        <a href="./delivery.html" class="text-sm font-normal">Доставка</a>
+      </li>
+      <li class="list-none px-4">
+        <a href="./contacts.html" class="text-sm font-normal">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%] mb-10">
+    <div class="text-sm breadcrumbs py-5">
+      <ul>
+        <li><a href="#" class="text-sm text-[#bbb] font-normal">Главная</a></li> 
+        <li><a href="#" class="text-sm text-[#bbb] font-semibold">страница не найдена</a></li>
+      </ul>
+    </div>
+
+    <section class="mb-8 max-md:mt-5">
+      <h2 class="text-[45px] font-normal max-md:text-center max-md:text-[32px]">Страница не найдена</h2>
+      <hr class="w-full h-[2px] bg-[#E8E8E8] block max-md:hidden mt-4">
+    </section>
+
+    <section>
+      <div class="flex gap-3 bg-[#FFD634] items-center py-3 px-4 w-full md:hidden max-md:mt-6">
+        <i class="fa-solid fa-bars text-white text-2xl cursor-pointer text-[26px]"></i>
+        <p class="text-[26px] font-normal text-center w-full">Каталог товаров</p>
+      </div>
+    </section>
+
+    <section class="mb-8 max-md:mt-5">
+      <h2 class="text-[16px] font-normal max-md:text-center max-md:text-lg">Страница не найдена, пожалуйста <a href="#" class="text-[#FF7A1B] underline">перейдите на главную</a></h2>
+    </section>
+
+    <section>
+      <div class="flex justify-between gap-[60px] max-md:flex-col">
+        <div class="flex flex-col gap-5">
+          <div>
+            <h2 class="text-[23px]">Почему так бывает?</h2>
+            <ul class="pl-5">
+              <li class="list-disc font-light">изменился адрес, а в некоторых источниках он по-прежнему указан по-старому</li>
+              <li class="list-disc font-light">при наборе адреса страницы была допущена опечатка или ошибка</li>
+              <li class="list-disc font-light">на некоторых форумах указаны неправильные, сильно сокращенные ссылки</li>
+            </ul>
+          </div>
+          <div>
+            <h2 class="text-[23px]">Рекомендуем:</h2>
+            <ul class="pl-5">
+              <li class="list-disc font-light">Рекомендуем: вернуться на главную страницу</li>
+              <li class="list-disc font-light">выбрать одну из категорий: <span class="text-[#FF7A1B]">Беседки, Бани, Дома, Площадки, Перголы, Бренды</span></li>
+              <li class="list-disc font-light">позвонить нам по номеру 8 (800) 800-00-00 и наши менеджеры помогут Вам решить любой     вопрос, или воспользоваться формой обратной связи
+              </li>
+            </ul>
+          </div>
+          <p class="text-[23px] font-normal">Можете так-же воспользоваться нашим поиском</p>
+          <div class="w-full flex items-center">
+            <input 
+              class="w-[80%] border-[1px] border-[#E8E8E8] rounded-[5px] py-2 px-4 focus:outline-none focus:border-[#FFD634]"
+              type="text" 
+              placeholder="Поиск по каталогу..."
+            >
+            <button class="w-[20%] bg-[#FFD634] text-black text-[16px] font-normal py-2 rounded-[5px] hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#ffd634] hover:border-[#ffd634]">Поиск</button>
+          </div>
+        </div>
+        <div class="p-10 shadow shadow-slate-800 max-md:px-5">
+          <h2 class="text-2xl font-normal">Форма обратной связи:</h2>
+          <input type="text" placeholder="Ваше имя *" class="input input-bordered w-full mt-2" />
+          <input type="email" placeholder="Ваш почтовый ящик *" class="input input-bordered w-full mt-2" />
+          <input type="number" placeholder="Ваш номер телефона" class="input input-bordered w-full mt-2" />
+          <input type="text" placeholder="Текст сообщения..." class="input input-bordered w-full mt-2" />
+          <textarea placeholder="Bio" class="textarea textarea-bordered textarea-lg w-full mt-2" ></textarea>
+          <div class="flex items-center justify-between mt-2 max-md:flex-col">
+            <button type="button" class="btn block bg-[#FF7A1B] text-white max-md:w-full">Отправить</button>
+            <div class="form-control">
+              <label class="cursor-pointer label">
+                <input type="checkbox" checked="checked" class="checkbox checkbox-warning" />
+                <span class="label-text text-sm font-normal ml-2">Согласен с условиями <span class="text-[#FF7A1B]">соглашения</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Categories -->
+      <div class="py-5">
+        <h1 class="text-[32px] font-normal max-md:text-center">Категории</h1>
+      </div>
+
+      <div class="grid grid-cols-3 grid-rows-6 gap-4 max-md:hidden">
+        <a href="./category.html" class="flex flex-col justify-between row-span-6 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-[26px] font-semibold">Беседки</h2>
+            <div class="flex gap-8">
+              <div class="hidden lg:block">
+                <p class="text-[14px] font-normal">Подкатегория 1</p>
+                <p class="text-[14px] font-normal">Подкатегория 2</p>
+                <p class="text-[14px] font-normal">Подкатегория 3</p>
+              </div>
+              <div class="hidden lg:block">
+                <p class="text-[14px] font-normal">Подкатегория 4</p>
+                <p class="text-[14px] font-normal">Подкатегория 5</p>
+                <p class="text-[14px] font-normal">Подкатегория 6</p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto">
+            <img src="./build/img/Беседка.png" alt="House">
+          </div>
+        </a>
+
+        <a href="./category.html" class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] font-semibold">Бани</h2>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 1</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 2</p>
+          </div>
+          <div>
+            <img src="./build/img/Баня.png" alt="Bathroom">
+          </div>
+        </a>
+
+        <a href="./category.html" class="flex justify-between items-center row-span-3 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] font-semibold">Детские площадки</h2>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 1</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 2</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 3</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 4</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 5</p>
+          </div>
+          <div>
+            <img src="./build/img/Горка.png" alt="Gorka">
+          </div>
+        </a>
+
+        <a href="./category.html" class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] font-semibold">Перголы</h2>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 1</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 2</p>
+          </div>
+          <div>
+            <img src="./build/img/Perg.png" alt="Perg">
+          </div>
+        </a>
+
+        <a href="./category.html" class="flex justify-between items-center row-span-3 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] font-semibold">Дома</h2>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 1</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 2</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 3</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 4</p>
+          </div>
+          <div>
+            <img src="./build/img/House.png" alt="Gorka">
+          </div>
+        </a>
+
+        <a href="./category.html" class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] font-semibold">Бренды</h2>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 1</p>
+            <p class="text-[14px] font-normal hidden lg:block">Подкатегория 2</p>
+          </div>
+          <div>
+            <img src="./build/img/Star.png" alt="Perg">
+          </div>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 gap-8 md:hidden max-[400px]:grid-cols-1">
+        <div class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] max-sm:text-xl font-normal">Беседки</h2>
+          </div>
+          <div>
+            <img src="./build/img/small/Беседка.png" alt="Bathroom">
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] max-sm:text-xl font-normal">Дома</h2>
+          </div>
+          <div>
+            <img src="./build/img/small/Star.png" alt="Bathroom">
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] max-sm:text-xl font-normal">Площадки</h2>
+          </div>
+          <div>
+            <img src="./build/img/small/Горка.png" alt="Bathroom">
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] max-sm:text-xl font-normal">Перголы</h2>
+          </div>
+          <div>
+            <img src="./build/img/small/Perg.png" alt="Bathroom">
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] max-sm:text-xl font-normal">Бани</h2>
+          </div>
+          <div>
+            <img src="./build/img/small/Баня.png" alt="Bathroom">
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center row-span-2 col-span-1 bg-[#FFF7D9] rounded-[6px] px-6 py-[22px]">
+          <div class="flex flex-col gap-1">
+            <h2 class="text-[26px] max-sm:text-xl font-normal">Бренды</h2>
+          </div>
+          <div>
+            <img src="./build/img/small/Star.png" alt="Bathroom">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <!-- Hits -->
+
+      <div class="py-5 flex justify-between max-md:justify-center items-center">
+        <h1 class="text-[32px] font-normal">Хиты продаж</h1>
+        <a href="#" class="text-[16px] font-normal text-[#BBB] max-md:hidden">Все товары ></a>
+      </div>
+
+      <nav class="bg-[#F9F8F3]">
+        <ul class="flex items-center w-full">
+          <li class="list-none px-12 py-5 border-b-2 border-[orange] bg-white cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-normal text-black max-lg:text-sm  max-[400px]:text-[10px]">Беседки</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Бани</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Площадки</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Дома</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Перголы</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mt-5">
+        <div class="grid grid-cols-5 max-xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-[400px]:grid-cols-1">
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auction Models -->
+
+      <div class="py-5 flex justify-between max-md:justify-center items-center">
+        <h1 class="text-[32px] font-normal">Акционные модели</h1>
+        <a href="#" class="text-[16px] font-normal text-[#BBB] max-md:hidden">Все товары ></a>
+      </div>
+
+      <nav class="bg-[#F9F8F3]">
+        <ul class="flex items-center w-full">
+          <li class="list-none px-12 py-5 border-b-2 border-[orange] bg-white cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-normal text-black max-lg:text-sm  max-[400px]:text-[10px]">Беседки</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Бани</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Площадки</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Дома</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Перголы</a>
+          </li>
+          <li class="list-none px-12 py-5 hover:border-b-2 hover:border-[orange] hover:bg-white hover:cursor-pointer max-lg:px-0 max-lg:w-[16%] max-lg:text-center">
+            <a href="#" class="text-lg font-light text-[#898989] max-lg:text-sm  max-[400px]:text-[10px]">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mt-5">
+        <div class="grid grid-cols-5 max-xl:grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-[400px]:grid-cols-1">
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-2 py-5 px-3 border-[1px] border-[#E8E8E8]">
+            <div class="rounded-[5px] w-full">
+              <img src="./build/img/xit.png" alt="Xit" class="w-full h-full object-cover">
+            </div>
+            <div class="flex justify-between items-center">
+              <p class="text-xs font-light opa">Articul:</p>
+              <p class="text-xs font-light opa">0000001</p>
+            </div>
+            <h1 class="text-lg font-normal">Название товара длинное в две строки наверное</h1>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-up-right-and-down-left-from-center text-[#FF7A1B]"></i>
+                <span>Размеры:</span>
+              </p>
+              <p class="text-[13px] font-light">12.3 x 14.6 x 4.3 м.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-regular fa-square text-[#FF7A1B]"></i>
+                <span>Площадь:</span>
+              </p>
+              <p class="text-[13px] font-light">33 м2</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-user text-[#FF7A1B]"></i>
+                <span>Вместимость:</span>
+              </p>
+              <p class="text-[13px] font-light">15 чел.</p>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-[13px] font-light">
+                <i class="fa-solid fa-circle-check text-[#FF7A1B]"></i>
+                <span>Гарантия:</span>
+              </p>
+              <p class="text-[13px] font-light">10 лет</p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div>
+                <p>
+                  <span class="text-[#bbb] text-sm max-sm:text-xs font-normal line-through">6 127 500 ₽</span>
+                  <span class="bg-[#FFD634] text-xs max-sm:text-[10px] font-normal p-1 rounded-md">-25%</span>
+                </p>
+                <p class="text-[#FF3838] text-[22px] max-sm:text-lg font-semibold">5 023 900 ₽</p>
+              </div>
+              <div class="w-1/3">
+                <button class="bg-[#FF7A1B] text-white text-[16px] font-normal rounded-md w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="bg-[#F9F8F3] py-11">
+    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
+      <div class="flex justify-between items-center w-full gap-4 max-2xl:flex-col max-2xl:text-center">
+        <p class="w-1/2 text-2xl font-normal max-md:w-[85%]">Хотите быть в курсе выгодных предложений, акций и новинок?</p>
+        <input type="text" placeholder="Имя" class="input input-bordered max-w-xs block max-md:w-[85%] max-2xl:w-full" />
+        <input type="email" placeholder="Email" class="input input-bordered max-w-xs block max-md:w-[85%] max-2xl:w-full" />
+        <button class="btn bg-[#FF7A1B] text-white text-[16px] font-normal btn-wide hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Подписаться</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-[#1F1F1F] py-6 max-md:hidden">
+    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
+      <div class="flex justify-between items-center max-xl:flex-col">
+        <div class="flex gap-[88px] items-center">
+          <div class="flex flex-col items-center">
+            <div class="text-center">
+              <img src="./build/img/footer-logo.png" alt="Logo">
+            </div>
+            <p class="text-sm font-normal text-white text-center">Логотип вашего магазина</p>
+          </div>
+          <div>
+            <p class="text-lg font-normal text-white">Наш адрес:</p>
+            <p class="text-lg font-normal text-white">Москва, ул. Новокосимская д.7</p>
+          </div>
+        </div>
+        <div class="flex gap-[88px] items-center max-xl:hidden">
+          <div>
+            <p class="text-lg font-normal text-white">График работы:</p>
+            <p class="text-lg font-normal text-white">Ежедневно с <span class="text-[#FF7A1B]">9:00</span> до <span class="text-[#FF7A1B]">21:00</span></p>
+          </div>
+          <div>
+            <button class="btn bg-[#FF7A1B] text-white text-[16px] font-normal btn-wide hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 bg-[#bbb] h-[1px] opacity-50">
+
+      <div class="flex justify-between items-start max-xl:flex-col max-xl:items-center max-xl:gap-5">
+        <div class="flex gap-16 items-start">
+          <nav>
+            <p class="text-[16px] font-normal text-white">Для покупателей:</p>
+            <ul class="flex flex-col gap-4 mt-4">
+              <li class="list-none">
+                <a href="./delivery.html" class="text-sm font-normal text-white opacity-75">Доставка</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Гарантия</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Политика конфиденциальности</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Отзывы</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Наши работы</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <p class="text-[16px] font-normal text-white">О компании:</p>
+            <ul class="flex flex-col gap-4 mt-4">
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">О Нас</a>
+              </li>
+              <li class="list-none">
+                <a href="./delivery.html" class="text-sm font-normal text-white opacity-75">Доставка и оплата</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Наши работы</a>
+              </li>
+              <li class="list-none">
+                <a href="./contacts.html" class="text-sm font-normal text-white opacity-75">Контакты</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Гарантия</a>
+              </li>
+            </ul>
+          </nav>
+          <nav>
+            <p class="text-[16px] font-normal text-white">Категории:</p>
+            <ul class="flex flex-col gap-4 mt-4">
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Беседки</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Бани</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Площадки</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Дома</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Перголы</a>
+              </li>
+              <li class="list-none">
+                <a href="#" class="text-sm font-normal text-white opacity-75">Бренды</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="flex items-start gap-[86px]">
+          <div class="flex flex-col gap-3">
+            <p class="text-sm font-normal text-white">Для регионов(звонок бесплатный)</p>
+            <p class="text-2xl font-light text-white">8 (800) <span class="font-semibold text-[#FF7A1B]">800-00-00</span></p>
+            <p class="text-sm font-normal text-white">
+              Email: <a href="mailto:youremail@mailbox.ru">youremail@mailbox.ru</a>
+            </p>
+            <p class="text-[16px] font-normal text-white">Мы в соц.сетях:</p>
+            <div class="flex gap-4">
+              <p class="w-[32px] h-[32px] rounded-full text-white border-[1px] border-white flex justify-center items-center cursor-pointer hover:text-[#FF7A1B] hover:border-[#FF7A1B]"><i class="fa-brands fa-whatsapp"></i></p>
+              <p class="w-[32px] h-[32px] rounded-full text-white border-[1px] border-white flex justify-center items-center cursor-pointer hover:text-[#FF7A1B] hover:border-[#FF7A1B]"><i class="fa-brands fa-youtube"></i></p>
+              <p class="w-[32px] h-[32px] rounded-full text-white border-[1px] border-white flex justify-center items-center cursor-pointer hover:text-[#FF7A1B] hover:border-[#FF7A1B]"><i class="fa-brands fa-instagram"></i></p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <p class="text-sm font-normal text-white">Для Москвы и Московской области</p>
+            <p class="text-2xl font-light text-white">8 (495) <span class="font-semibold text-[#FF7A1B]">700-00-00</span></p>
+            <p class="text-sm font-normal text-white">
+              <a href="#">Сообщить об ошибке на сайте</a>
+            </p>
+            <p class="text-sm font-semibold text-white">
+              ООО <span class="font-light">"Фаза Групп"</span>
+            </p>
+            <p class="text-sm font-semibold text-white">
+              ИНН: <span class="font-light">7751140879</span>
+            </p>
+            <p class="text-sm font-semibold text-white">
+              ОГРН: <span class="font-light">1187746273461</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr class="my-6 bg-[#bbb] h-[1px] opacity-50">
+
+      <div class="flex justify-between items-center max-xl:flex-col max-xl:gap-5">
+        <div class="flex flex-col gap-1 max-xl:flex-row">
+          <p class="text-sm font-normal text-white opacity-75 underline">Публичная оферта</p>
+          <p class="text-sm font-normal text-white opacity-75">2013-2021 - Товары для дач,</p>
+          <p class="text-sm font-normal text-white opacity-75">деревянные конструкции под любые нужды</p>
+        </div>
+        <div class="flex justify-between items-center gap-14">
+          <p class="text-sm font-normal text-white opacity-75">Принимаем к оплате:</p>
+          <div class="flex gap-6 items-center">
+            <img src="./build/img/VISA.png" alt="">
+            <img src="./build/img/JCB.png" alt="">
+            <img src="./build/img/MAESTRO.png" alt="">
+            <img src="./build/img/MASTERCARD.png" alt="">
+            <img src="./build/img/yandex 1.png" alt="">
+            <img src="./build/img/МИР.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="bg-[#1F1F1F] py-6 hidden max-md:block">
+    <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
+      <div class="flex flex-col items-center">
+        <div class="text-center">
+          <img src="./build/img/mob-logo.png" alt="Logo">
+        </div>
+        <p class="text-xl font-normal text-white text-center">Логотип вашего магазина</p>
+      </div>
+      <hr class="my-6 bg-[#bbb] h-[3px] opacity-20">
+
+      <div class="flex justify-evenly items-center max-[400px]:flex-col max-[400px]:text-center max-[400px]:gap-5">
+        <nav>
+          <p class="text-xl font-normal text-white px-6">Для покупателей:</p>
+          <hr class="my-3 bg-[#bbb] h-[3px] opacity-20">
+          <ul class="flex flex-col gap-4 mt-4 px-6">
+            <li class="list-none">
+              <a href="./delivery.html" class="text-lg font-normal text-white opacity-75">Доставка</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Гарантия</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Политика конфиденциальности</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Отзывы</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Наши работы</a>
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <p class="text-xl font-normal text-white px-6">О компании:</p>
+          <hr class="my-3 bg-[#bbb] h-[3px] opacity-20">
+          <ul class="flex flex-col gap-4 mt-4 px-6">
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">О Нас</a>
+            </li>
+            <li class="list-none">
+              <a href="./delivery.html" class="text-lg font-normal text-white opacity-75">Доставка и оплата</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Наши работы</a>
+            </li>
+            <li class="list-none">
+              <a href="./contacts.html" class="text-lg font-normal text-white opacity-75">Контакты</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="mt-14">
+        <p class="text-xl font-normal text-white text-center">Категории:</p>
+        <hr class="my-3 bg-[#bbb] h-[3px] opacity-20">
+        <div class="flex justify-around items-center">
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Беседки</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Бани</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Площадки</a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-4 mt-4">
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Дома</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-lg font-normal text-white opacity-75">Перголы</a>
+            </li>
+            <li class="list-none">
+              <a href="#" class="text-sm font-normal text-white opacity-75">Бренды</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <hr class="my-6 bg-[#bbb] h-[3px] opacity-20">
+
+      <h2 class="text-[32px] font-normal text-white text-center px-10">Контакты</h2>
+
+      <div class="w-[90%] mx-auto">
+        <hr class="my-6 bg-[#bbb] h-[3px] opacity-20">
+        <div>
+          <p class="text-lg font-normal text-white">Наш адрес:</p>
+          <p class="text-[25px] font-normal text-white">Москва, ул. Новокосимская д.7</p>
+        </div>
+        <br>
+        <div>
+          <p class="text-lg font-normal text-white">График работы:</p>
+          <p class="text-[25px] font-normal text-white">Ежедневно с <span class="text-[#FF7A1B]">9:00</span> до <span class="text-[#FF7A1B]">21:00</span></p>
+        </div>
+        <hr class="my-6 bg-[#bbb] h-[3px] opacity-20">
+        <div class="flex justify-between max-[400px]:flex-col">
+          <div>
+            <p class="text-lg font-normal text-white">Для регионов(звонок бесплатный)</p>
+            <p class="text-2xl font-light text-white">8 (800) <span class="font-semibold text-[#FF7A1B]">800-00-00</span></p>
+          </div>
+          <div>
+            <p class="text-lg font-normal text-white">Для регионов(звонок бесплатный)</p>
+            <p class="text-2xl font-light text-white">8 (800) <span class="font-semibold text-[#FF7A1B]">800-00-00</span></p>
+          </div>
+        </div>
+        <div class="w-full mt-4">
+          <button type="button" class="cursor-pointer rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+        </div>
+        <hr class="my-6 bg-[#bbb] h-[3px] opacity-20">
+        <div class="flex flex-col items-center gap-3">
+          <p class="text-lg font-normal text-white text-center">
+            Email: <br>
+            <a href="mailto:youremail@mailbox.ru" class="text-2xl">youremail@mailbox.ru</a>
+          </p>
+          <p class="text-lg font-normal text-white">Мы в соц.сетях:</p>
+          <div class="flex gap-4">
+            <p class="w-[56px] h-[56px] rounded-full text-white border-[1px] border-white flex justify-center items-center cursor-pointer hover:text-[#FF7A1B] hover:border-[#FF7A1B]"><i class="fa-brands fa-whatsapp text-[32px]"></i></p>
+            <p class="w-[56px] h-[56px] rounded-full text-white border-[1px] border-white flex justify-center items-center cursor-pointer hover:text-[#FF7A1B] hover:border-[#FF7A1B]"><i class="fa-brands fa-youtube text-[32px]"></i></p>
+            <p class="w-[56px] h-[56px] rounded-full text-white border-[1px] border-white flex justify-center items-center cursor-pointer hover:text-[#FF7A1B] hover:border-[#FF7A1B]"><i class="fa-brands fa-instagram text-[32px]"></i></p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-6 bg-[#bbb] h-[3px] opacity-20">
+
+      <div class="flex flex-col justify-between items-center gap-8">
+        <p class="text-sm font-normal text-white opacity-75">Принимаем к оплате:</p>
+        <div class="flex gap-6 items-center flex-wrap justify-center">
+          <img class="w-[100px]" src="./build/img/VISA.png" alt="">
+          <img class="w-[100px]" src="./build/img/JCB.png" alt="">
+          <img class="w-[100px]" src="./build/img/MAESTRO.png" alt="">
+          <img class="w-[100px]" src="./build/img/MASTERCARD.png" alt="">
+          <img class="w-[100px]" src="./build/img/МИР.png" alt="">
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center mt-12">
+        <p class="text-lg font-semibold text-white">
+          ООО <span class="font-normal">"Фаза Групп"</span>
+        </p>
+        <p class="text-lg font-semibold text-white">
+          ИНН: <span class="font-normal">7751140879</span>
+        </p>
+        <p class="text-lg font-semibold text-white">
+          ОГРН: <span class="font-normal">1187746273461</span>
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-1 mt-7 items-center justify-center text-center">
+        <p class="text-lg font-normal text-white opacity-75 underline">Публичная оферта</p>
+        <p class="text-lg font-normal text-white opacity-75">2013-2021 - Товары для дач,</p>
+        <p class="text-lg font-normal text-white opacity-75">деревянные конструкции под любые нужды</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="./src/script.js"></script>
+</html>
