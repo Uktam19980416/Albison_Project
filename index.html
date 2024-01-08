@@ -18,6 +18,12 @@
       border-radius: 5px;
     }
 
+    #forCategory:checked ~ .categoryDropdown {
+      display: block;
+      transition: display 0.5s ease-in-out;
+      height: 0;
+    }
+
     @media (max-width: 768px) {
       .shadow-for-img {
         box-shadow: none;
@@ -123,7 +129,28 @@
             <a href="mailto:youremail@mailbox.ru" class="text-[13px] font-normal">youremail@mailbox.ru</a>
           </div>
           <div class="w-full">
-            <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+            <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]" onclick="my_modal_2.showModal()">Заказать звонок</button>
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box flex flex-col justify-between items-center gap-2">
+                <h3 class="font-normal text-[32px] text-center">Мы вам перезвоним</h3>
+                <p class="text-sm font-light text-[#6d6d6d] text-center">
+                  Заполните, пожалуйста, поля ниже, чтобы мы могли 
+                  связаться с вами.  Добавьте комментарий, чтобы менеджер
+                  оперативно ответил на все ваши вопросы
+                </p>
+                <input type="text" placeholder="Имя *" class="input input-bordered w-full" />
+                <input type="text" placeholder="Телефон *" class="input input-bordered w-full" />
+                <textarea placeholder="Ваш комментарий" class="textarea textarea-bordered textarea-lg w-full" ></textarea>
+                <div class="flex items-center gap-3">
+                  <input type="checkbox" class="checkbox checkbox-md" />
+                  <p class="text-[11px] font-light">Согласен с <span class="text-[#FF7A1B] underline">обработкой персональных данных</span></p>
+                </div>
+                <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
           </div>
         </div>
       </div>
@@ -160,8 +187,29 @@
                 <a href="mailto:youremail@mailbox.ru" class="text-[13px] font-normal">youremail@mailbox.ru</a>
               </div>
               <div class="w-full">
-                <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+                <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]" onclick="my_modal_4.showModal()">Заказать звонок</button>
               </div>
+              <dialog id="my_modal_4" class="modal">
+                <div class="modal-box flex flex-col justify-between items-center gap-2">
+                  <h3 class="font-normal text-[32px] text-center">Мы вам перезвоним</h3>
+                  <p class="text-sm font-light text-[#6d6d6d] text-center">
+                    Заполните, пожалуйста, поля ниже, чтобы мы могли 
+                    связаться с вами.  Добавьте комментарий, чтобы менеджер
+                    оперативно ответил на все ваши вопросы
+                  </p>
+                  <input type="text" placeholder="Имя *" class="input input-bordered w-full" />
+                  <input type="text" placeholder="Телефон *" class="input input-bordered w-full" />
+                  <textarea placeholder="Ваш комментарий" class="textarea textarea-bordered textarea-lg w-full" ></textarea>
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="checkbox checkbox-md" />
+                    <p class="text-[11px] font-light">Согласен с <span class="text-[#FF7A1B] underline">обработкой персональных данных</span></p>
+                  </div>
+                  <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
             </div>
           </div>
           <div class="sm:hidden py-2 max-sm:w-[80%]">
@@ -171,9 +219,30 @@
               placeholder="Поиск по каталогу..."
             >
           </div>
-          <div class="sm:hidden max-sm:w-[5%] max-sm:flex max-sm:justify-end">
+          <div class="sm:hidden max-sm:w-[5%] max-sm:flex max-sm:justify-end" onclick="my_modal_3.showModal()">
             <i class="fa-solid fa-phone text-white text-xl"></i>
           </div>
+          <dialog id="my_modal_3" class="modal">
+            <div class="modal-box flex flex-col justify-between items-center gap-2">
+              <h3 class="font-normal text-[32px] text-center">Мы вам перезвоним</h3>
+              <p class="text-sm font-light text-[#6d6d6d] text-center">
+                Заполните, пожалуйста, поля ниже, чтобы мы могли 
+                связаться с вами.  Добавьте комментарий, чтобы менеджер
+                оперативно ответил на все ваши вопросы
+              </p>
+              <input type="text" placeholder="Имя *" class="input input-bordered w-full" />
+              <input type="text" placeholder="Телефон *" class="input input-bordered w-full" />
+              <textarea placeholder="Ваш комментарий" class="textarea textarea-bordered textarea-lg w-full" ></textarea>
+              <div class="flex items-center gap-3">
+                <input type="checkbox" class="checkbox checkbox-md" />
+                <p class="text-[11px] font-light">Согласен с <span class="text-[#FF7A1B] underline">обработкой персональных данных</span></p>
+              </div>
+              <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-full py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Заказать звонок</button>
+            </div>
+            <form method="dialog" class="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
         </div>
 
         <div class="w-full flex items-center max-sm:hidden">
@@ -191,10 +260,10 @@
   <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
     <nav class="max-[1381px]:hidden">
       <ul class="flex justify-between items-center text-center">
-        <div class="flex gap-3 bg-[#FFD634] text-center items-center py-3 px-4 w-1/5">
+        <label for="forCategory" class="flex gap-3 bg-[#FFD634] text-center items-center py-3 px-4 w-1/5">
           <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>
           <p class="text-[16px] font-normal">Каталог товаров</p>
-        </div>
+        </label>
         <li class="list-none">
           <a href="./aboutCompany.html" class="text-sm font-normal">О компании</a>
         </li>
@@ -212,6 +281,89 @@
         </li>
       </ul>
     </nav>
+    <input type="checkbox" class="hidden" id="forCategory">
+    <div class="hidden categoryDropdown">
+      <ul class="flex flex-col bg-[#F6F6F6] px-5 w-1/5 -z-10 ul">
+        <li class="list-none flex justify-between py-2 items-center">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <a href="#" class="text-sm font-normal block">Беседки</a>
+          </div>
+          <div class="dropdown dropdown-right dropdown-end">
+            <div tabindex="0" role="button" class="m-1" title="Next"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-none flex justify-between py-2 items-center">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <a href="#" class="text-sm font-normal block">Бани</a>
+          </div>
+          <div class="dropdown dropdown-right dropdown-end">
+            <div tabindex="0" role="button" class="m-1" title="Next"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-none flex justify-between py-2 items-center">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <a href="#" class="text-sm font-normal block">Площадки</a>
+          </div>
+          <div class="dropdown dropdown-right dropdown-end">
+            <div tabindex="0" role="button" class="m-1" title="Next"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-none flex justify-between py-2 items-center">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <a href="#" class="text-sm font-normal block">Дома</a>
+          </div>
+          <div class="dropdown dropdown-right dropdown-end">
+            <div tabindex="0" role="button" class="m-1" title="Next"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-none flex justify-between py-2 items-center">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <a href="#" class="text-sm font-normal block">Перголы</a>
+          </div>
+          <div class="dropdown dropdown-right dropdown-end">
+            <div tabindex="0" role="button" class="m-1" title="Next"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-none flex justify-between py-2 items-center">
+          <div class="flex gap-5">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <a href="#" class="text-sm font-normal block">Бренды</a>
+          </div>
+          <div class="dropdown dropdown-right dropdown-end">
+            <div tabindex="0" role="button" class="m-1" title="Next"><i class="fa-solid fa-chevron-right"></i></div>
+            <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Item 1</a></li>
+              <li><a>Item 2</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <input type="checkbox" class="hidden" id="menu-toggle">

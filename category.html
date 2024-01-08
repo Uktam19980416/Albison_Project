@@ -18,6 +18,11 @@
       border-radius: 5px;
     }
 
+    #forCategory:checked ~ .categoryDropdown {
+      display: none;
+      transition: display 0.5s ease-in-out;
+    }
+
     @media (max-width: 768px) {
       .shadow-for-img {
         box-shadow: none;
@@ -191,10 +196,10 @@
   <div class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
     <nav class="max-[1381px]:hidden">
       <ul class="flex justify-between items-center text-center">
-        <div class="flex gap-3 bg-[#FFD634] text-center items-center py-3 px-4 w-1/5">
+        <label for="forCategory" class="flex gap-3 bg-[#FFD634] text-center items-center py-3 px-4 w-1/5">
           <i class="fa-solid fa-bars text-white text-2xl cursor-pointer"></i>
           <p class="text-[16px] font-normal">Каталог товаров</p>
-        </div>
+        </label>
         <li class="list-none">
           <a href="./aboutCompany.html" class="text-sm font-normal">О компании</a>
         </li>
@@ -244,7 +249,8 @@
   <main class="container max-w-[1996px] w-[80%] mx-auto max-xl:w-[90%] max-lg:w-[95%]">
     <div class="flex gap-7 items-start">
       <aside class="w-1/5 max-md:hidden">
-        <ul class="flex flex-col bg-[#F6F6F6] px-5 max-[1381px]:hidden">
+        <input type="checkbox" class="hidden" id="forCategory">
+        <ul class="categoryDropdown flex flex-col bg-[#F6F6F6] px-5 max-[1381px]:hidden">
           <li class="list-none flex justify-between py-2 items-center">
             <div class="flex gap-5">
               <i class="fa-solid fa-landmark-flag"></i>
@@ -713,22 +719,6 @@
             <li class="list-none border-[1px] border-dashed border-[#bbb] rounded-md py-[10px] px-[15px] carousel-item">
               <a href="#" class="text-xs font-light">Пример категории</a>
             </li>
-            <!-- <li class="">
-              <div class="dropdown carousel-item">
-                <div 
-                  tabindex="0" 
-                  title="Dropdown"
-                  role="button" 
-                  class="btn bg-[#FF7A1B] hover:bg-[#FF7A1B] border-none"
-                >
-                  <i class="fa-solid fa-chevron-down text-white"></i>
-                </div>
-                <ul tabindex="0" class="dropdown-content z-[1] menu shadow p-2 bg-base-100 rounded-box w-52">
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
-                </ul>
-              </div>
-            </li> -->
           </ul>
         </nav>
         <div class="flex justify-center py-5">

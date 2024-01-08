@@ -13,6 +13,11 @@
     #menu-toggle:checked ~ body {
       left: 0;
     }
+
+    #forCategory:checked ~ .categoryDropdown {
+      display: none;
+      transition: display 0.5s ease-in-out;
+    }
   </style>
 </head>
 <body>
@@ -323,7 +328,29 @@
               <p>вы можете обратиться к нашим менеджерам.</p>
             </div>
             <div class="w-[40%] max-sm:w-3/4 bg-[#FF7A1B] text-center py-3 rounded-[6px] hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B] cursor-pointer">
-              <a href="#" class="text-[16px] text-white hover:text-[#FF7A1B]">Задать вопрос Online</a> 
+              <a href="#" class="text-[16px] text-white hover:text-[#FF7A1B]" onclick="my_modal_2.showModal()">Задать вопрос Online</a> 
+              <dialog id="my_modal_2" class="modal">
+                <div class="modal-box flex flex-col justify-between items-center gap-2">
+                  <h3 class="font-normal text-[32px] text-center text-black">Задать вопрос</h3>
+                  <p class="text-sm font-light text-[#6d6d6d] text-center">
+                    Заполните, пожалуйста, поля ниже, чтобы мы могли связаться с вами. 
+                  </p>
+                  <input type="text" placeholder="Имя *" class="input input-bordered w-full" />
+                  <input type="number" placeholder="Телефон *" class="input input-bordered w-full" />
+                  <textarea placeholder="Ваш вопрос" class="textarea textarea-bordered textarea-lg w-full" ></textarea>
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" class="checkbox checkbox-md" />
+                    <p class="text-[11px] font-light">Согласен с <span class="text-[#FF7A1B] underline">обработкой персональных данных</span></p>
+                  </div>
+                  <div class="w-full flex items-center justify-between mt-5 gap-3">
+                    <button class="rounded-md text-lg font-normal text-white bg-[#FF7A1B] w-1/2 py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#FF7A1B] hover:border-[#FF7A1B]">Опубликовать</button>
+                    <button class="rounded-md text-lg font-normal text-[#bbb] bg-[#F9F8F3] w-1/2 py-3 hover:transition-all hover:border-[1px] hover:bg-white hover:text-[#F9F8F3] hover:border-[#F9F8F3]">Отмена</button>
+                  </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button>close</button>
+                </form>
+              </dialog>
             </div>
           </div>
         </div>
